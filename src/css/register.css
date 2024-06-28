@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: url("https://images.hdqwalls.com/download/the-valley-minimal-4k-9y-1680x1050.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: 50%;
+
+}
+
+
+
+
+
