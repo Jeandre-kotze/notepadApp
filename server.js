@@ -1,7 +1,7 @@
 import express from "express";
 import pg from "pg";
 import env from "dotenv";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import bodyParser from "body-parser";
 import cors from "cors";
 
