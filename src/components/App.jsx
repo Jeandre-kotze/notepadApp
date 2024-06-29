@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
-import DisplayProjects from "./displayProjects";
-import InputNewProject from "./inputNewProject";
-import ProjectNotSelected from "./projectNotSelected";
-import Sidebar from "./sidebar";
+import DisplayProjects from "./DisplayProjects";
+import InputNewProject from "./InputNewProject";
+import ProjectNotSelected from "./ProjectNotSelected";
+import Sidebar from "./Sidebar";
 
 function App() {
   console.log("App");
