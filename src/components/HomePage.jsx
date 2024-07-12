@@ -11,12 +11,9 @@ export default function HomePage(){
             <p className="comment">Your personal, secured notepad</p>
         </div>
        <div>
-        <Link to="/register" className="">
+        <Link to="/notepad" className="">
             <button className="home-button">Register</button>
-           </Link>
-           <Link to="/login" className="">
-            <button className="home-button">Login</button>
-           </Link> 
+        </Link>
        </div>
        <footer className="footer">
         Made by JEANDRE
