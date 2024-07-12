@@ -11,8 +11,8 @@ export default function HomePage(){
             <p className="comment">Your personal, secured notepad</p>
         </div>
        <div>
-        <Link to="/notepad" className="">
-            <button className="home-button">Notepad</button>
+        <Link to="/notepad">
+            <button className="home-button">Go To Notepad</button>
         </Link>
        </div>
        <footer className="footer">
