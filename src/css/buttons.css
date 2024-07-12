@@ -1,7 +1,0 @@
-.glowButton{
-    text-shadow: 0 0 1em white;
-}
-
-.glowButton::after{
-    text-shadow: 0 0 2em white;
-}
