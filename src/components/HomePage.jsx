@@ -12,7 +12,7 @@ export default function HomePage(){
         </div>
        <div>
         <Link to="/notepad" className="">
-            <button className="home-button">Register</button>
+            <button className="home-button">Notepad</button>
         </Link>
        </div>
        <footer className="footer">
