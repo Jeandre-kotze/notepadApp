@@ -1,12 +1,12 @@
 import {createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import Login from "./components/Login";
-import Register from "./components/Register";
+import HomePage from "./components/HomePage.jsx";
+import Login from "./components/Login.jsx";
+import Register from "./components/Register.jsx";
 //import App from "./components/App";
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./components/ErrorPage.jsx";
 import { lazy } from "react";
 
-const App = lazy(() => import("./components/App")) //Lazy loading, App doesnt need to be loaded so early
+const App = lazy(() => import("./components/App.jsx")) //Lazy loading, App doesnt need to be loaded so early
 
 const router = createBrowserRouter([
   { path: '/', 
