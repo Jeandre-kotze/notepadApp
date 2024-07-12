@@ -23,7 +23,7 @@ export default function Login() {
   }
 
   return (
-      <div className="container">
+      <div className="contains">
       <form className="container-form" onSubmit={handleSubmit}>
         <h1 className="f-title">Login</h1>
         <input className="f-btn" name="email" type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />

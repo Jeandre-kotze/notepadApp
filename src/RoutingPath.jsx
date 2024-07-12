@@ -1,18 +1,37 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./components/homePage";
+import {createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./components/HomePage";
 import Login from "./components/Login";
-import Register from "./components/register";
-import App from "./components/App";
+import Register from "./components/Register";
+//import App from "./components/App";
+import ErrorPage from "./components/ErrorPage";
+import { lazy } from "react";
 
+const App = lazy(() => import("./components/App")) //Lazy loading, App doesnt need to be loaded so early
+
+const router = createBrowserRouter([
+  { path: '/', 
+    element: <HomePage />, 
+    errorElement: <ErrorPage />,
+  },
+  { 
+    path: '/login', 
+    element: <Login />,
+    errorElement: <ErrorPage />,
+  }, //Realitve path 
+  { 
+    path: '/register', 
+    element: <Register />,
+    errorElement: <ErrorPage />,
+  },//"Relative path"
+  { 
+    path: '/notepad', 
+    element: <App />,
+    errorElement: <ErrorPage />,
+  }, 
+])
 
 export default function RoutingPath() {
   return (
-  <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<HomePage />}></Route>
-        <Route path='/login' element={<Login />}></Route>
-        <Route path='/register' element={<Register />}></Route>
-        <Route path='/notepad' element={<App />}></Route>
-      </Routes>
-  </BrowserRouter>)
+    <RouterProvider router={router}/>
+  )
 }

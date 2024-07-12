@@ -1,9 +1,9 @@
-import logo from "/logo.png";
+import logo from "../public/logo.png";
 
 export default function ProjectNotSelected({startNewProject}){
     console.log("ProjectNotSelected");
     return (
-        <div className="items-center flex flex-col  gap-2 text-lg">
+        <div className="items-center flex flex-col  gap-2 text-lg justify-center">
             <img src={logo} className="size-40" alt="board" />
             <h1>No Project selected</h1>
             <h3 className="pb-2 text-center">Select a project or create a new one</h3>

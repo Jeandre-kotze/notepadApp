@@ -27,7 +27,7 @@ export default function Register() {
   }
 
     return (
-      <div className="container">
+      <div className="contains">
         <form className="container-form" onSubmit={handleSubmit}>
           <h1 className="f-title">Register</h1>
           <input className="f-btn" name="email" type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />

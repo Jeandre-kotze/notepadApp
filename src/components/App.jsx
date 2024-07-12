@@ -3,6 +3,8 @@ import DisplayProjects from "./DisplayProjects";
 import InputNewProject from "./InputNewProject";
 import ProjectNotSelected from "./ProjectNotSelected";
 import Sidebar from "./Sidebar";
+import axios from "axios";
+import { redirect } from "react-router-dom";
 
 function App() {
   console.log("App");
@@ -12,7 +14,6 @@ function App() {
 
   // Memoized callbacks using useCallback
   const handleDeleting = useCallback((action, thisIndex) => {
-    console.log("Deleting");
     if (action === "project") {
       setProjectList((prevProjectList) =>
         prevProjectList
@@ -98,13 +99,22 @@ function App() {
         setCurrentIndex={(index) => setCurrentIndex(index)}
         setProjectState={(state) => setAddingProjectState(state)}
       />
-      <div className="flex justify-center self-center w-full">
+      <div className="flex justify-center self-center w-full h-full">
         {content}
       </div>
     </main>
   );
 }
 
+export async function loader(){
+const loginStatus = localStorage.getItem('loginStatus');
+
+if(loginStatus === "true"){
+  return
+} else{
+  return redirect("/login");
+}
+
+}
+
 export default App;
-
-
