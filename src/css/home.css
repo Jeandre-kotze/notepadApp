@@ -58,9 +58,9 @@
     background: transparent;
     margin-top: 20px;
     border-radius: 10px;
-    border: 0.1rem solid black ;
+    border: 0.1rem solid white ;
     font-size: medium;
-    color: black;
+    color: white;
 }
 
 .home-button:hover{
@@ -140,6 +140,7 @@
 .introduction{
     margin-bottom: 5px;
     font-size: large;
+    color: white;
 }
 
 footer{
@@ -149,5 +150,9 @@ footer{
 
 .copyright{
     font-size: 0.85rem;
+}
+
+aside{
+    transition: 5s; 
 }
 
